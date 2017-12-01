@@ -1,0 +1,5 @@
+# Bleeding edge Django
+django==1.11.7
+
+# Python-PostgreSQL Database Adapter
+psycopg2==2.7.3.2
