@@ -1,4 +1,12 @@
+# AHP #
+
 This project is an implemention of the AHP (Analytic Hierarchy Process) algorithm. It's a generic decision analyzer, which means you can define your own criteria and alternatives for you customized decision process.
+
+## Technologies ##
+
+* React.js
+* Python/Django
+* PostgreSQL
 
 ## About the AHP algorithm ##
 
