@@ -12,5 +12,4 @@ class Decision(models.Model):
     end_date = models.DateTimeField(blank=True, null=True)
 
     def __str__(self):
-        return self.title + ' (' + \
-            self.creation_date.strftime('%d/%m/%Y %H:%M') + ')'
+        return 'Decision #%s' % str(self.id)  # pragma: no cover
