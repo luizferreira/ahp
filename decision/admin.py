@@ -1,3 +1,4 @@
 from django.contrib import admin
+from decision.models import Decision
 
-# Register your models here.
+admin.site.register(Decision)
