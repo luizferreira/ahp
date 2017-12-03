@@ -1,2 +1,2 @@
 [flake8]
-exclude = manage.py, ahp/settings.py, decision/migrations
+exclude = manage.py, config/settings.py, decision/migrations
