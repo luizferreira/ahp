@@ -5,24 +5,18 @@ from django.test import TestCase
 from decision.models import Decision
 
 
+DECISION_TEST_DATA = {
+    'title': 'Test Decision',
+    'description': 'Test Description',
+    'participants_qty': 10,
+    'creation_date': timezone.now(),
+}
+
+
 class DecisionTests(TestCase):
 
-    def test_str(self):
-        decision = Decision(
-            title='Test Decision',
-            description='Test Description',
-            participants_qty=10,
-            creation_date=timezone.now(),
-        )
-        decision_str = 'Test Decision (%s)' % \
-            decision.creation_date.strftime('%d/%m/%Y %H:%M')
-        assert decision.__str__() == decision_str
+    def setUp(self):
+        self.decision = Decision(**DECISION_TEST_DATA)
 
     def test_creation(self):
-        decision = Decision(
-            title='Test Decision',
-            description='Test Description',
-            participants_qty=10,
-            creation_date=timezone.now(),
-        )
-        assert type(decision) == Decision
+        assert type(self.decision) == Decision
