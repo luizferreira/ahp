@@ -9,4 +9,4 @@ class Vote(models.Model):
     finished = models.BooleanField(default=False)
 
     def __str__(self):
-        return 'Vote #%s' % str(self.id)
+        return 'Vote #%s' % str(self.id)  # pragma: no cover
